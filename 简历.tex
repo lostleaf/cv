@@ -1,0 +1,150 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage[SlantFont]{xeCJK}
+%\setCJKmainfont{兰亭黑-简}
+\setCJKmainfont[BoldFont=兰亭黑-简,ItalicFont=STKaiti]{STSong}
+\usepackage{fontspec}
+\setmainfont
+  [ BoldFont   = HelveticaNeue-Bold.otf,
+    ItalicFont = HelveticaNeue-LightItalic.otf ]
+  {HelveticaNeue-Light.otf}
+\setsansfont{HelveticaNeue-Light.otf}
+% \setmonofont{Courier New}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+% Set your name here
+\def\name{Qinglin Li}
+% Chinese name here
+\def\cname{李青林}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {computer science, machine learning},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 9.5in},
+  left=0.8in,
+  top=0.8in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+\usepackage{wasysym}
+
+\begin{document}
+
+\begin{minipage}{0.35\linewidth}
+  {\huge  \cname}
+  \vspace{0.1in} \\
+%  Born on June 1, 1993. Male. \\
+  \href{http://www.sjtu.edu.cn/}{上海交通大学}
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Gmail:  & \href{mailto:jack951753@gmail.com}{\tt jack951753@gmail.com} \\
+    GitHub: & \href{https://github.com/lostleaf}{\tt http://github.com/lostleaf} \\
+    Tel:    & {\tt +86 151-2112-7746}
+  \end{tabular}
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+\includegraphics[width=40pt]{photo}
+\end{minipage}
+
+
+
+
+\section*{教育背景}
+
+\begin{itemize}
+
+\item  本科,计算机科学专业.\quad\quad~2011.9 - 2015.6~(预计) \\
+    \emph{\href{http://acm.sjtu.edu.cn}{ACM班},
+    \href{http://www.sjtu.edu.cn/}{上海交通大学}.}
+\item
+    绵阳中学.\qquad\qquad\qquad\qquad2008.9 - 2011.6
+\end{itemize}
+
+\section*{个人经历}
+\begin{itemize}
+\item \textbf{研究助理} \emph{\href{http://bcmi.sjtu.edu.cn}{仿脑计算与机器智能研究中心}}\qquad\qquad\qquad~~2013.7至今\\
+    导师:~~~~~~~~~~\emph{\href{http://bcmi.sjtu.edu.cn/~zhangliqing/}{张丽清教授}}\\
+    研究领域:~~~基于视频的人流密度检测.
+\item \textbf{助教}  \emph{\href{http://acm.sjtu.edu.cn/wiki/Programming_2013}{C++ 程序设计}}\qquad\qquad\qquad\qquad\qquad\qquad\quad\qquad~2013.9 - 2014.1\\
+助教团队总负责人.
+\item \textbf{助教}  \emph{\href{http://acm.sjtu.edu.cn/wiki/Programming_2013}{C++ 程序设计}}\qquad\qquad\qquad\qquad\qquad\qquad\quad\qquad~2012.9 - 2013.1\\
+线上测试出题者.
+\end{itemize}
+
+\section*{部分项目经历 \normalsize{\it(\href{https://github.com/lostleaf?tab=repositories}{更多细节})}}
+\begin{itemize}
+\item \textbf{\href{http://acm.sjtu.edu.cn/ricsrt/}{Ranking Tool Research Capacity in CS}}:
+在\textbf{\href{http://www.cs.cornell.edu/jeh/}{John Hopcroft教授}}的讨论课中实现的一个项目, 用于衡量和比较计算机科学领域中不同国家和机构的研究生产力、质量和影响力,并且对结果进行了可视化.
+\item \textbf{\href{https://github.com/lostleaf/nachos}{Nachos Operating System}}: 
+使用 Java 实现的一项课程设计,功能包括多线程和多道编程、缓存和虚拟内存以及自己设计的文件系统文件系统等.
+\item \textbf{\href{https://github.com/lostleaf/cpu}{Simulated CPU}}:
+使用 Verilog 实现的一项课程设计,完全实现了 Tomasulo 算法,并模拟了缓存系统. 该CPU可以仿真执行 MIPS 汇编语言的一个图灵完备的子集.
+\item \textbf{\href{https://github.com/lostleaf/compiler}{C Language Compiler}}:
+使用 Java 实现的一项课程设计,支持 C语言 的大部分特性,并且以 MIPS 架构为编译目标,该项目也完全实现了多种优化.
+\item \textbf{\href{https://github.com/lostleaf/Pathfinding-Evaluation}{Pathfinding Evaluation Framework}}:
+使用 Java 实现的一个可视化框架,用于测试各种寻路算法在真实世界地图上的表现.
+\item \textbf{\href{http://acm.sjtu.edu.cn/OnlineJudge/}{SJTU Online Judge}}: 
+(与同学合作完成) 使用 PHP 实现的一个在线程序评测系统,该系统对外开放,目前用于自动评分多门课程的作业和上机考试.该系统使用了包括 Linux, Nginx, Varnish, MySQL, Redis, Memcached 在内的多种开源软件.
+\end{itemize}
+
+\section*{获奖情况}
+\begin{itemize}
+\item 全国信息学奥林匹克竞赛省级联赛(NOIP) \textbf{一等奖}, 2009. 
+\item 全国信息学奥林匹克竞赛(NOI) \textbf{银牌}, 2010. 
+\item 中国大学生数学建模竞赛(CUMCM) \textbf{三等奖}, 2013. 
+\end{itemize}
+
+\section*{技能}
+\begin{itemize}
+\item 基本理解机器学习和计算视觉算法.
+\item 编程语言和技术: Ruby, Java, Python, C/C++, Matlab, javascript, PHP, HTML, Rails等.
+\end{itemize}
+
+\section*{个人简述}
+我是上海交通大学 \textbf{\href{http://acm.sjtu.edu.cn}{ACM班}} 的一名学生.我从 2003 年左右接触编程,目前能熟练使用多种编程语言和技术.我目前主要的研究领域为 \textbf{机器学习} 和 \textbf{计算视觉} .我对于 {\it 网络开发} 和 {\it 数据分析} 也很有兴趣. 我希望从事人工智能方面的研究.
+\end{document}
