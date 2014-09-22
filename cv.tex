@@ -12,6 +12,7 @@
 \documentclass[letterpaper]{article}
 
 \usepackage{xeCJK}
+\usepackage[compact]{titlesec}
 \setCJKmainfont{Kai}
 
 \usepackage{fontspec}
@@ -46,7 +47,7 @@
 }
 
 \geometry{
-  body={6.5in, 9.5in},
+  body={6.6in, 9.5in},
   left=0.8in,
   top=0.8in
 }
@@ -71,6 +72,7 @@
 \setlength\parindent{0em}
 
 \usepackage{wasysym}
+\titlespacing*{\section}{0pt}{0pt}{0pt}
 
 \begin{document}
 
@@ -84,23 +86,22 @@
   \begin{tabular}{ll}
     Gmail:  & \href{mailto:jack951753@gmail.com}{\tt jack951753@gmail.com} \\
     GitHub: & \href{https://github.com/lostleaf}{\tt http://github.com/lostleaf} \\
-    Tel:    & {\tt +86 151-2112-7746}
+    Tel(Shanghai):    & {\tt +86 151-2112-7746}\\
+    Tel(Beijing):   & {\tt +86 131-4103-8926}
   \end{tabular}
 \end{minipage}
 
 ~\\
 I'm a student of \textbf{\href{http://acm.sjtu.edu.cn}{ACM Honored Class}} of Shanghai Jiaotong University.
 I started programming around 2003 and I'm experienced in various programming languages and techniques.
-And I'm interested in \emph{web development} and \emph{software engineering}.
-My primary research interest includes \emph{machine learning} and \emph{computer vision}.
+I'm interested in \emph{web development} and \emph{software engineering}.
+And my primary research interest includes \emph{machine learning} and \emph{computer vision}.
 \section*{Education}
 \begin{itemize}
-
 \item  B.S. in Computer Science.~\quad\qquad~2011.9 - 2015.6~(expected) \\
     \emph{\href{http://acm.sjtu.edu.cn}{ACM Honored Class},
     \href{http://www.sjtu.edu.cn/}{Shanghai Jiao Tong University}.}
 \end{itemize}
-
 \section*{Personal Experience}
 \begin{itemize}
 \item \textbf{Research Intern}, \emph{\href{http://research.microsoft.com/en-us/labs/asia/}{Microsoft Research Asia}} \quad2014.8 - 2015.2~(excepted)\\
@@ -111,38 +112,33 @@ My primary research interest includes \emph{machine learning} and \emph{computer
     Research Area:~~~Machine Learning and Computer Vision.
 \item \textbf{Teaching Assistant},  \emph{\href{http://acm.sjtu.edu.cn/wiki/Programming_2013}{C++ Programming}}\qquad~ 2013.9 - 2014.1\\
 Leader of the TA team.
-\item \textbf{Teaching Assistant},  \emph{C++ Programming}\qquad~ 2012.9 - 2013.1\\
 \end{itemize}
-\section*{Selected Projects \normalsize{\tt(\href{https://github.com/lostleaf?tab=repositories}{more details})}}
-\begin{itemize}
-\item \textbf{Crowd Density Estimation in Video}:
-a college student innovation project, which estimate the crowd density with machine learning techniques in videos. The final gaol is to enhance the performance in high density and high occlusion scenes, such as surveillance video of subway stations.
-\item \textbf{\href{http://acm.sjtu.edu.cn/ricsrt/}{Ranking Tool Research Capacity in CS}}:
-a project for \emph{\href{http://www.cs.cornell.edu/jeh/}{Prof. John Hopcroft}}'s seminar, which visualizes and compares the CS research productivity, quality and impact of countries and institutions.
-\item \textbf{\href{https://github.com/lostleaf/fatworm}{Fatworm Database}}:
-a complete relational database system built from scratch in java. It contains a implementation of SQL parser, SQL engine and JDBC interface.
-control, database manager
-\item \textbf{\href{https://github.com/lostleaf/compiler}{C Language Compiler}}:
-a project written in Java, which supports most features of C Language and targets the MIPS architecture. It contains a full implementation of several optimization.
-\item \textbf{\href{https://github.com/lostleaf/nachos}{Nachos Operating System}}: 
-a project written in Java, including threading and multiprogramming, cache and virtual memory, and a self-designed file system.
-\item \textbf{\href{https://github.com/lostleaf/cpu}{Simulated CPU}}:
-a project written in verilog, including a full implementation of tomasulo algorithm with buffers. It is able to execute a turing complete subset of MIPS assembly language.
-\item \textbf{\href{http://acm.sjtu.edu.cn/OnlineJudge/}{SJTU Online Judge}}: (Lead by \emph{\href{http://xiao-jia.com/}{Xiao Jia}}) a publicly available online system written in PHP for testing programs in programming contests, which is used for auto-grading homeworks and exams for several courses and leverages open source softwares such as Linux, nginx, Varnish, MySQL, Redis, memcached, etc.
-\end{itemize}
-
-\section*{Awards}
-\begin{itemize}
-\item  \textbf{Honorable Mention(Second Prize)} in Mathematical Contest in Modeling (MCM), 2014.
-\item  \textbf{Third Prize} in China Undergraduate Mathematical Contest in Modeling (CUMCM), 2013. 
-\item  \textbf{Silver Medal(Second Prize)} in China's National Olympiad in Informatics (NOI), 2010. 
-\item  \textbf{First Prize} in China's National Olympiad in Informatics in Provinces (NOIP), 2009. 
-\end{itemize}
-
 \section*{Skills}
 \begin{itemize}
 \item Machine learning related: Python, Matlab, C/C++.
 \item Web development related: Ruby, Rails, HTML, javascript, CSS, PHP.
 \item Desktop application development related: Java.
 \end{itemize}
+\section*{Selected Projects \normalsize{\tt(\href{https://github.com/lostleaf?tab=repositories}{more details})}}
+\begin{itemize}
+\item \textbf{Crowd Density Estimation in Video}:
+a college student innovation project, which estimate the crowd density in high density and high occlusion scenes with machine learning techniques in videos.
+\item \textbf{\href{http://acm.sjtu.edu.cn/ricsrt/}{Ranking Tool Research Capacity in CS}}:
+a project for \emph{\href{http://www.cs.cornell.edu/jeh/}{Prof. John Hopcroft}}'s seminar, which visualizes and compares the Computer Science research productivity, quality and impact of countries and institutions.
+\item \textbf{\href{https://github.com/lostleaf/fatworm}{Fatworm Database}}:
+A complete relational database system built from scratch. It contains a implementation of SQL parser, SQL engine and JDBC interface.
+\item \textbf{\href{https://github.com/lostleaf/compiler}{C Language Compiler}}:
+a project written in Java, which supports most features of C Language and targets the MIPS architecture. It contains a full implementation of several optimization.
+\item \textbf{\href{https://github.com/lostleaf/nachos}{Nachos Operating System}}: 
+A scratch for operating system, including threading and multiprogramming, cache and virtual memory, and a self-designed file system.
+%\item \textbf{\href{http://acm.sjtu.edu.cn/OnlineJudge/}{SJTU Online Judge}}: (Lead by \emph{\href{http://xiao-jia.com/}{Xiao Jia}}) a publicly available online system written in PHP for testing programs in programming contests, which is used for auto-grading homeworks and exams for several courses and leverages open source softwares such as Linux, nginx, Varnish, MySQL, Redis, memcached, etc.
+\end{itemize}
+\section*{Awards}
+\begin{itemize}
+\item  \textbf{Honorable Mention(Second Prize)} in Mathematical Contest in Modeling (MCM), 2014.
+\item  \textbf{Third Prize} in China Undergraduate Mathematical Contest in Modeling (CUMCM), 2013. 
+\item  \textbf{Silver Medal(Second Prize)} in China's National Olympiad in Informatics (NOI), 2010. 
+\end{itemize}
+
+
 \end{document}
