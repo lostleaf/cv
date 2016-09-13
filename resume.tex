@@ -26,8 +26,10 @@
 \usepackage{hyperref}
 \usepackage{enumerate}
 \name{Qinglin Li} % Your name
-\address{2214 Maple Ave, Evanston, IL, 60201} % Your address
-\address{(847) 246-2457 \\ \href{mailto:qinglinli2015@u.northwestern.edu}{qinglinli2015@u.northwestern.edu}}
+\address{1915 Maple Avenue, APT 910-A, Evanston, IL, 60201} % Your address
+\address{Github: \href{github.com/lostleaf}{github.com/lostleaf}}
+\address{+1 (847) 246-2457 \\ \href{mailto:qinglinli2015@u.northwestern.edu}{qinglinli2015@u.northwestern.edu}}
+
 
 
 \begin{document}
@@ -37,104 +39,124 @@
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
-%\vspace{10pt}
+\vspace{10pt}
 
 \begin{rSection}{Education}
-\begin{rSubsection}{Northwestern University}{SEP 2015 - DEC 2016 (Expected)}{\quad GPA:  \textsc{4.0/4.0}}\\
-M.S. in Computer Science\\
-Coursework: Machine Learning, Biometrics, Data Science, Computer Vision, Geospatial Vision and Visualization, CUDA programming, Human Computer Interaction
+\begin{rSubsection}{Northwestern University}{SEP 2015 - DEC 2016 (Expected)}{Chicago, USA\quad GPA:  \textsc{4.0/4.0}}\\
+M.S. in Computer Science
+%Coursework: Machine Learning, Biometrics, Data Science, Computer Vision, Geospatial Vision and Visualization, CUDA programming, Human Computer Interaction
 \end{rSubsection}
 \vspace{5pt}
-\begin{rSubsection}{Shanghai Jiao Tong University, China}{SEP 2011 - JUN 2015}{\quad GPA:  \textsc{3.5/4.0}}\\
-B.S. in Computer Science \& Engineering\\
-Coursework: Statistical Learning, Scientific Computing, Algorithms,  Operating System, Computer Network, Database, Computer Architecture, etc.
+\begin{rSubsection}{Shanghai Jiao Tong University}{SEP 2011 - JUN 2015}{Shanghai, China\quad GPA:  \textsc{3.5/4.0}}\\
+B.S. in Computer Science \& Engineering
+%Coursework: Statistical Learning, Scientific Computing, Algorithms,  Operating System, Computer Network, Database, Computer Architecture, etc.
 \end{rSubsection}
 \end{rSection}
 %----------------------------------------------------------------------------------------
 %	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
-%\vspace{10pt}
 
-\begin{rSection}{Skills}
-
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{4ex}} l }
-Programming Languages & C/C++, Java, Ruby, Python, MATLAB\\
-Application Development & HTML, CSS, Bootstrap, Ruby on Rails, Java Swing\\
-Machine Learning \& Computer Vision & scikit-learn, scikit-image, OpenCV\\
-Tools \& Others & Vim, \LaTeX{}, Linux/Mac OS X, MySQL, Git
-\end{tabular}
-
-\end{rSection}
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
-%\vspace{10pt}
+\vspace{10pt}
 
 \begin{rSection}{Experience}
+\begin{rSubsection}{Computer Vision Engineer Intern}{JUN 2016 - SEP 2016}{}
+	
+	{\em HERE North America LLC \hfill Chicago, USA}
+	
+	%Team: Natural Language Computing, Mentor: Dr. Mu Li
+	\begin{itemize}
+	\item Trained a deep convolutional neural network(fully convolutional encoder-decoder structure) for lane detection with Caffe. This model could detect most of the lane lines when tested with street view images on highways.
+	\item Created wrappers for Caffe Deep Learning training and testing automation in Python.
+	\item Implemented a tool for LiDAR point cloud colorization with street view images in C++, OpenCV and GeographicLib.
+	\item Cooperated with other team members to QA the road geometry generated from the LiDAR high definition map pipeline.
+	\end{itemize}
+\end{rSubsection}	
+
 \begin{rSubsection}{Research Intern}{AUG 2014 - FEB 2015}{}
 
 {\em Microsoft Research Asia \hfill Beijing, China}
 
 %Team: Natural Language Computing, Mentor: Dr. Mu Li
 \begin{itemize}
-\item Coordinated with team members in the Natural Language Computing team with a focus on machine translation research.
-\item Collected text data from Internet and analyzed the English-Chinese relationship with rules, using Python and Mechanize.
-\item Implemented a graphical model to solve the entity translation problem between English and Chinese knowledge bases by utilizing the relations between entities using Python and scikit-learn. This model outperformed traditional machine translation algorithms. .
+\item Research on the knowledge bases entities English-Chinese translation problem with Natural Language Processing team and implemented a graphical model with Python and Numpy. Compared to a SVM baseline, accuracy is improved from 50\% to 90\% when tested on a movie knowledge base.
+\item Wrote crawlers to collect and analyze English-Chinese translations from Internet in Python.
 \end{itemize}
 \end{rSubsection}
 \vspace{5pt}
-\begin{rSubsection}{Research Student}{JUL 2013 - AUG 2014}{}
+\begin{rSubsection}{Research Assistant}{JUL 2013 - AUG 2014}{}
 	
 {\em BCMI Lab of Shanghai Jiao Tong University \hfill Shanghai, China}
 
 %Research Area: Computer Vision, Mentor: Prof. Liqing Zhang
 \begin{itemize}
-\item Cooperated with teammates to solve the pedestrian counting problem by mining rich low-level computer vision features and testing different regression models using Python, scikit-learn and OpenCV. The project was selected as a Shanghai city Undergraduate Innovative Practice Program.
+\item Researched on feature engineering of the crow density estimation problem and proposed a easy to train method combining a rich bank of low level image features and non linear support vector regression reached state-of-the-art performance. This work is then selected as a Shanghai College Student Innovation Practice Project.
 \end{itemize}
 \end{rSubsection}
+\begin{rSubsection}{Team leader}{SEP 2015 - NOV 2015}{}
+	
+	{\em CoolWildCats ACM-ICPC team of Northwestern University \hfill Chicago, USA}
+	
+
+	\begin{itemize}
+		\item Leaded the CoolWildCats team, representing Northwestern University, won the 4th place in 2015 ACM-ICPC Mid-Central USA Regional contest.
+	\end{itemize}
+\end{rSubsection}
+\end{rSection}
+
+%\vspace{10pt}
+
+\begin{rSection}{Skills}
+	Years of experience in Computer Vision(OpenCV) and Machine Learning \\
+	Proficient in C++ and Python \\
+	Working Experience in Deep Learning frameworks Caffe, Tensorflow and MXNet \\
+	Experience in Java, Ruby, MATLAB, Linux commands and tools such as Vim and Git \\ 
+	Knowledge of Web development skills including HTML, CSS, JavaScript, Ruby on Rails and MySQL
+	
 \end{rSection}
 %----------------------------------------------------------------------------------------
 %	COURSE PROJECT EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 %\vspace{10pt}
 
-\begin{rSection}{Projects}%{\begin{bf}GitHub\end{bf}: \href{https://github.com/lostleaf?tab=repositories}{https://github.com/lostleaf}}
-
-\begin{rSubsection}{Fatworm Database System}{FALL 2014}{Shanghai Jiao Tong University}
-\begin{itemize}
-\item Developed a relational database system supporting JDBC interface including SQL parser, query engine and file storage in Java.
-\end{itemize}
-\end{rSubsection}
-\vspace{3pt}
-\begin{rSubsection}{Nachos Operating System}{FALL 2013}{Shanghai Jiao Tong University}
-\begin{itemize}
-\item Implemented threading and multiprogramming, virtual memory, and a self-designed file system within the Nachos operating system in Java.
-\end{itemize}
-\end{rSubsection}
-\vspace{3pt}
-\begin{rSubsection}{C Language Compiler}{SPRING 2013}{Shanghai Jiao Tong University}
-\begin{itemize}
-\item Developed a compiler of the C Language targeting the MIPS architecture including parser, syntax checking and the linear scan algorithm for register allocation in Java.
-\end{itemize}
-\end{rSubsection}
-\vspace{3pt}
+%\begin{rSection}{Projects}%{\begin{bf}GitHub\end{bf}: \href{https://github.com/lostleaf?tab=repositories}{https://github.com/lostleaf}}
+%
+%\begin{rSubsection}{Fatworm Database System}{FALL 2014}{Shanghai Jiao Tong University}
+%\begin{itemize}
+%\item Developed a relational database system supporting JDBC interface including SQL parser, query engine and file storage in Java.
+%\end{itemize}
+%\end{rSubsection}
+%\vspace{3pt}
+%\begin{rSubsection}{Nachos Operating System}{FALL 2013}{Shanghai Jiao Tong University}
+%\begin{itemize}
+%\item Implemented threading and multiprogramming, virtual memory, and a self-designed file system within the Nachos operating system in Java.
+%\end{itemize}
+%\end{rSubsection}
+%\vspace{3pt}
+%\begin{rSubsection}{C Language Compiler}{SPRING 2013}{Shanghai Jiao Tong University}
+%\begin{itemize}
+%\item Developed a compiler of the C Language targeting the MIPS architecture including parser, syntax checking and the linear scan algorithm for register allocation in Java.
+%\end{itemize}
+%\end{rSubsection}
+%\vspace{3pt}
 %\begin{rSubsection}{Simulated CPU}{SPRING 2013}{Shanghai Jiao Tong University}
 %\begin{itemize}
 %\item Simulated a CPU with Tomasula algorithm for dynamic instruction scheduling in Verilog.
 %\end{itemize}
 %\end{rSubsection}
+%
+%\end{rSection}
 
-\end{rSection}
-%\vspace{10pt}
 %----------------------------------------------------------------------------------------
 %	AWARDS SECTION
 %----------------------------------------------------------------------------------------
 
-
-\begin{rSection}{Honors}
-\textbf{Ranked 4th} out of 146 in \textbf{ACM-ICPC} Mid-Central USA Regional Contest \hfill 2015\\
-\textbf{Second Prize} in Mathematical Contest in Modeling (MCM) \hfill 2014\\
-%\textbf{Teaching Assistant} for the C++ programming course at Shanghai Jiao Tong University \hfill 2013\\
+%\vspace{10pt}
+\begin{rSection}{Services}
+\textbf{Coach} of Rails Girls Beijing \hfill 2014\\
+\textbf{Teaching Assistant} for the C++ programming course at Shanghai Jiao Tong University \hfill 2013\\
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
